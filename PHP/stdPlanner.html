@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fe; /* Very light grey-blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .planner-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px; /* Perfect width for a form */
+        }
+        h1 {
+            text-align: center;
+            color: #4361ee; /* A pleasant blue */
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #4361ee;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        button:hover {
+            background-color: #3a56d4; /* A slightly darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="planner-container">
+        <h1>Student Study Planner</h1>
+
+        <form id="study-planner-form">
+            <!-- Subject Input -->
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g. Mathematics" required>
+            </div>
+
+            <!-- Task Input -->
+            <div class="form-group">
+                <label for="task">Task</label>
+                <textarea id="task" name="task" placeholder="Describe the study task..." required></textarea>
+            </div>
+
+            <!-- Due Date Input -->
+            <div class="form-group">
+                <label for="due-date">Due Date</label>
+                <input type="date" id="due-date" name="due-date" required>
+            </div>
+
+            <!-- Add Button -->
+            <button type="submit">Add To Planner</button>
+        </form>
+    </div>
+</body>
+</html>

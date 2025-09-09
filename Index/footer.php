@@ -1,0 +1,7 @@
+
+    <footer>
+        <p>&copy; 2025 My Site</p>
+    </footer>
+    
+</body>
+</html>
